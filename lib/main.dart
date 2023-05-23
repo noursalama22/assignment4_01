@@ -79,15 +79,46 @@ class MyApp extends StatelessWidget {
               ),
               Column(
                 children: [
-                  CircleAvatar(
-                    radius: 120,
-                    backgroundColor: Colors.purple[300],
-                    backgroundImage: NetworkImage(
-                      'https://images.saatchiart.com/saatchi/944035/art/4337871/3407711-HSC00001-7.jpg',
+                  Container(
+                    height: 250,
+                    width: 250,
+                    alignment: Alignment.center,
+                    padding: EdgeInsets.all(24),
+                    margin: EdgeInsets.only(left: 16, top: 16), //< 8 12 16 <
+                    // padding: EdgeInsets.only(left: 10),
+
+                    decoration: BoxDecoration(
+                      image: DecorationImage(
+                          fit: BoxFit.cover,
+                          image: NetworkImage(
+                              'https://images.saatchiart.com/saatchi/944035/art/4337871/3407711-HSC00001-7.jpg')),
+                      boxShadow: [
+                        BoxShadow(
+                          offset: Offset(10, 10),
+                          color: Colors.grey,
+                          blurRadius: 20,
+                          spreadRadius: 10,
+                        ),
+                        BoxShadow(
+                          offset: Offset(-20, -15),
+                          color: Colors.white,
+                          blurRadius: 20,
+                          spreadRadius: 10,
+                        ),
+                      ],
+                      shape: BoxShape.circle,
+                      color: Colors.grey[300],
                     ),
                   ),
+                  // CircleAvatar(
+                  //   radius: 120,
+                  //   backgroundColor: Colors.purple[300],
+                  //   backgroundImage: NetworkImage(
+                  //     'https://images.saatchiart.com/saatchi/944035/art/4337871/3407711-HSC00001-7.jpg',
+                  //   ),
+                  // ),
                   const SizedBox(
-                    height: 20,
+                    height: 30,
                   ),
                   const Text(
                     "Unavailable",
