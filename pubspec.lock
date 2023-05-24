@@ -75,6 +75,14 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  gradient_colored_slider:
+    dependency: "direct main"
+    description:
+      name: gradient_colored_slider
+      sha256: "9c1f8220b2d129c40fd71c60dcf7950783b6ed366424a432176da9221dfa1995"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.0.2"
   js:
     dependency: transitive
     description:
@@ -186,3 +194,4 @@ packages:
     version: "2.1.4"
 sdks:
   dart: ">=2.19.6 <3.0.0"
+  flutter: ">=1.17.0"
